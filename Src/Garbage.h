@@ -10,6 +10,8 @@ public:
     Garbage(std::string*);
     ~Garbage();
 
+    const std::string* getName();
+
 protected:
     std::string name;
 };

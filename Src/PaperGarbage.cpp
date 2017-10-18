@@ -15,4 +15,6 @@ void PaperGarbage::squeeze() {
     squeezedState = true;
 }
 
-
+const std::string* Garbage::getName() {
+    return &name;
+}
