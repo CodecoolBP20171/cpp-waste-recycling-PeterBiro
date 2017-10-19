@@ -5,7 +5,10 @@ PaperGarbage::PaperGarbage() {
     squeezedState = false;
 }
 
-PaperGarbage::PaperGarbage(std::string * nm, bool squeeze) : name(*nm), squeezedState(squeeze){}
+PaperGarbage::PaperGarbage(std::string * nm, bool squeeze) : Garbage::Garbage(nm), squeezedState(squeeze){}
+
+PaperGarbage::~PaperGarbage() = default;
+
 
 bool PaperGarbage::isSqueezed() {
     return squeezedState;
@@ -15,6 +18,3 @@ void PaperGarbage::squeeze() {
     squeezedState = true;
 }
 
-const std::string* Garbage::getName() {
-    return &name;
-}

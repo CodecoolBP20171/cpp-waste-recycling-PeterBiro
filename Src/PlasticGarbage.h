@@ -1,10 +1,9 @@
-#ifndef WASTERECYCLING_PLASTICGARBAGE_H
-#define WASTERECYCLING_PLASTICGARBAGE_H
-
+#ifndef PLASTICGARBAGE_H
+#define PLASTICGARBAGE_H
 
 #include "Garbage.h"
 
-class PlasticGarbage: public Garbage {
+class PlasticGarbage: Garbage {
 
 public:
     PlasticGarbage();

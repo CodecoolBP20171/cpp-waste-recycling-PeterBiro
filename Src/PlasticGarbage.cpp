@@ -1,7 +1,3 @@
-//
-// Created by birop on 2017.10.18..
-//
-
 #include "PlasticGarbage.h"
 
 PlasticGarbage::PlasticGarbage() {
@@ -9,7 +5,9 @@ PlasticGarbage::PlasticGarbage() {
     cleanState = false;
 }
 
-PlasticGarbage::PlasticGarbage(std::string * nm, bool cln) : name(*nm), cleanState(cln){}
+PlasticGarbage::PlasticGarbage(std::string * nm, bool cln) : Garbage::Garbage(nm), cleanState(cln){}
+
+PlasticGarbage::~PlasticGarbage() = default;
 
 bool PlasticGarbage::isClean() {
     return cleanState;

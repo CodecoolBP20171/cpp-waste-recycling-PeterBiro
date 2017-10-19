@@ -1,5 +1,5 @@
-#ifndef WASTERECYCLING_GARBAGE_H
-#define WASTERECYCLING_GARBAGE_H
+#ifndef GARBAGE_H
+#define GARBAGE_H
 
 #include <iostream>
 
