@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Src/PaperGarbage.h"
 #include "Src/PlasticGarbage.h"
+#include "Src/Dustbin.h"
+#include "Src/DustbinContentError.hpp"
 
 
 int main() {
@@ -26,7 +28,20 @@ int main() {
 
     std::cout << paper2.isSqueezed() << std::endl;
 
+    Dustbin myDustbin;
 
+    try{
+        myDustbin.throwOutPaperGarbage(paper1);
+    } catch (NotSqueezedError & e) {
+        std::cout << e.what() << std::endl;
+    }
+
+    PaperGarbage paper3;
+    try{
+        myDustbin.throwOutPaperGarbage(paper3);
+    } catch (NotSqueezedError & e) {
+        std::cout << e.what() << std::endl;
+    }
 
     return 0;
 }
