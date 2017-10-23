@@ -6,8 +6,7 @@
 class PlasticGarbage: Garbage {
 
 public:
-    PlasticGarbage();
-    PlasticGarbage(std::string, bool);
+    PlasticGarbage(std::string = "some plastic waste", bool = false);
     ~PlasticGarbage();
 
     void clean();

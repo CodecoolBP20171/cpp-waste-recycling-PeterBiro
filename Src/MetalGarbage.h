@@ -6,7 +6,7 @@
 class MetalGarbage : public Garbage {
 
 public:
-    MetalGarbage();
+    MetalGarbage(std::string nm = "Metal crap");
     ~MetalGarbage();
 };
 

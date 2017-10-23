@@ -1,5 +1,5 @@
 #include "MetalGarbage.h"
 
-MetalGarbage::MetalGarbage() {}
+MetalGarbage::MetalGarbage(std::string nm) : Garbage(std::move(nm)){}
 
 MetalGarbage::~MetalGarbage() = default;

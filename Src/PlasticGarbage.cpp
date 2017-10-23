@@ -1,11 +1,6 @@
 #include "PlasticGarbage.h"
 
-PlasticGarbage::PlasticGarbage() {
-    name = "some plastic waste";
-    cleanState = false;
-}
-
-PlasticGarbage::PlasticGarbage(std::string nm, bool cln) : Garbage::Garbage(nm), cleanState(cln){}
+PlasticGarbage::PlasticGarbage(std::string nm, bool cln) : Garbage::Garbage(std::move(nm)), cleanState(cln){}
 
 PlasticGarbage::~PlasticGarbage() = default;
 

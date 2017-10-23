@@ -6,8 +6,8 @@
 class Garbage {
 
 public:
-    Garbage();
-    Garbage(std::string);
+
+    Garbage(std::string nm = "some waste"); // What is 'explicit' keyword?
     ~Garbage();
 
     std::string getName();
