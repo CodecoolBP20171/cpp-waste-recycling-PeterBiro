@@ -6,7 +6,7 @@
 class BottleCap : Garbage{
 
 public:
-    BottleCap();
+    BottleCap(std::string);
     ~BottleCap();
 
     bool isPink();
@@ -17,5 +17,4 @@ protected:
 
 };
 
-
-#endif //WASTERECYCLING_BOTTLECAP_H
+#endif //BOTTLECAP_H
