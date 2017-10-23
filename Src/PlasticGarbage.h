@@ -7,7 +7,7 @@ class PlasticGarbage: Garbage {
 
 public:
     PlasticGarbage();
-    PlasticGarbage(std::string*, bool);
+    PlasticGarbage(std::string, bool);
     ~PlasticGarbage();
 
     void clean();

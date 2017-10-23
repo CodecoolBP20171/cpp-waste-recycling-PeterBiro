@@ -5,7 +5,7 @@ PlasticGarbage::PlasticGarbage() {
     cleanState = false;
 }
 
-PlasticGarbage::PlasticGarbage(std::string * nm, bool cln) : Garbage::Garbage(nm), cleanState(cln){}
+PlasticGarbage::PlasticGarbage(std::string nm, bool cln) : Garbage::Garbage(nm), cleanState(cln){}
 
 PlasticGarbage::~PlasticGarbage() = default;
 

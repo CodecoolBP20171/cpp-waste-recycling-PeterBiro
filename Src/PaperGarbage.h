@@ -7,7 +7,7 @@ class PaperGarbage: public Garbage {
 
 public:
     PaperGarbage();
-    PaperGarbage(std::string*, bool);
+    PaperGarbage(std::string, bool);
     ~PaperGarbage();
 
     bool isSqueezed();

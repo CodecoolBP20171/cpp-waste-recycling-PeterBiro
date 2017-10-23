@@ -7,10 +7,10 @@ class Garbage {
 
 public:
     Garbage();
-    Garbage(std::string*);
+    Garbage(std::string);
     ~Garbage();
 
-    const std::string* getName();
+    std::string getName();
 
 protected:
     std::string name;

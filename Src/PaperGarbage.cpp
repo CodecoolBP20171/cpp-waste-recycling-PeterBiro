@@ -5,7 +5,7 @@ PaperGarbage::PaperGarbage() {
     squeezedState = false;
 }
 
-PaperGarbage::PaperGarbage(std::string * nm, bool squeeze) : Garbage::Garbage(nm), squeezedState(squeeze){}
+PaperGarbage::PaperGarbage(std::string nm, bool squeeze) : Garbage::Garbage(nm), squeezedState(squeeze){}
 
 PaperGarbage::~PaperGarbage() = default;
 

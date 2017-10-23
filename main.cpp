@@ -9,7 +9,7 @@ int main() {
 
     PaperGarbage paper1;
 
-    std::cout << *paper1.getName() << std::endl;
+    std::cout << paper1.getName() << std::endl;
     std::cout << paper1.isSqueezed() << std::endl;
     std::cout << "now squeezing" << std::endl;
 
@@ -18,9 +18,9 @@ int main() {
     std::cout << paper1.isSqueezed() << std::endl;
 
     std::string name = "fecni";
-    PaperGarbage paper2( & name, false);
+    PaperGarbage paper2(name, false);
 
-    std::cout << *paper2.getName() << std::endl;
+    std::cout << paper2.getName() << std::endl;
     std::cout << paper2.isSqueezed() << std::endl;
     std::cout << "now squeezing" << std::endl;
 
